@@ -1,0 +1,433 @@
+html {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  color: #444;
+}
+
+a {
+  text-decoration: none;
+  color: cornflowerblue;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+header .container {
+  display: flex;
+  padding: 0 24px;
+  height: 64px;
+}
+
+header .logoframe {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+header .title {
+  color: grey;
+}
+
+header .bold {
+  font-weight: 900;
+  color: #555;
+}
+
+header .logoframe img {
+  height: 32px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+header li {
+  display: inline;
+  font-size: 20px;
+  padding-right: 16px;
+}
+
+header li:last-child {
+  padding-right: 0;
+}
+
+.headermobile {
+  display: none;
+}
+
+@media only screen and (max-width: 470px) {
+  header {
+    display: none;
+  }
+
+  .headermobile {
+    display: flex;
+    justify-content: space-around;
+    height: 64px;
+  }
+}
+
+
+
+.banner .container {
+  background-color: lightgrey;
+  padding: 32px 24px;
+  display: flex;
+  align-items: center;
+}
+
+.banner .container .image {
+  width: 60%;
+  padding-right: 24px;
+}
+
+.banner .container .image img {
+  width: 100%;
+}
+
+.banner .container .text {
+  width: 40%;
+}
+
+.banner h2 {
+  margin: 20px 0;
+}
+
+.banner .button {
+  text-align: center;
+  padding: 8px;
+  background-color: #555;
+}
+
+.button a {
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (max-width: 470px) {
+  .banner .container {
+    flex-direction: column;
+    padding: 0;
+    }
+
+  .banner .container .image {
+    width: 100%;
+    padding-right: 0;
+    }
+
+  .banner .container .text {
+    width: 100%;
+    padding: 32px 0;
+    }
+
+  .banner h1 {
+    margin: 0 16px 32px 16px;
+    }
+
+  .banner h2 {
+    margin: 0 16px 24px 16px;
+    }
+
+  .banner .button {
+    margin: 0 16px 0 16px;
+    }
+}
+
+
+
+.info .container {
+  display: flex;
+  padding: 0 24px 32px 24px;
+}
+
+.info .container .left {
+  width: 60%;
+  padding-right: 24px;
+  border-right: 1px solid lightgrey;
+}
+
+.info .container .left img {
+  width: 100%;
+  margin-top: 32px;
+}
+
+.info .container .right {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-top: 32px;
+}
+
+.info .container .right .item,
+.thesis .container .right .item {
+  display: flex;
+  align-items: center;
+  padding: 16px 16px;
+}
+
+.info .container .right .first {
+  padding-top: 0;
+  border-bottom: 3px double lightgrey;
+}
+
+.info .container .right .grey,
+.thesis .container .right .grey {
+  background-color: lightgrey;
+}
+
+.info .container .right .item .image,
+.thesis .container .right .item .image {
+  width: 35%;
+}
+
+.info .container .right .item .image img,
+.thesis .container .right .item .image img {
+  width: 100%;
+}
+
+.info .container .right .item .image .mobile,
+.thesis .container .right .item .image .mobile {
+  display: none;
+}
+
+.info .container .right .item .content,
+.thesis .container .right .item .content {
+  width: 65%;
+  padding-left: 16px;
+}
+
+.info .left h1 {
+  margin: 32px 0 24px 0;
+}
+
+.info .left p {
+  margin-bottom: 24px;
+}
+
+.info .right .content p {
+  margin: 8px 0;
+}
+
+@media only screen and (max-width: 470px) {
+  .info .container {
+    padding: 0;
+  }
+
+  .info .left {
+    display: none;
+  }
+
+  .info .container .right {
+    width: 100%;
+    margin-top: 16px;
+    padding: 0 16px 32px 16px;
+  }
+
+  .info .container .right .item {
+    flex-direction: column;
+    padding-bottom: 64px;
+  }
+
+  .info .container .right .item .image {
+    width: 100%;
+    padding-bottom: 16px;
+  }
+
+  .info .container .right .item .image img {
+    display: none;
+  }
+
+  .info .container .right .item .image .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .info .container .right .item .content {
+    width: 100%;
+  }
+
+  .info .container .right .grey {
+    background-color: white;
+    padding-bottom: 0;
+  }
+
+  .info .container .right .first {
+    border: 0;
+  }
+
+}
+
+
+
+.course {
+  padding: 32px 72px;
+  background-color: lightgrey;
+}
+
+.course .container {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 32px;
+}
+
+.course .container .one {
+  margin-right: 32px;
+}
+
+.course .container .three {
+  margin-left: 32px;
+}
+
+.course .container .detail img {
+  max-width: 100%;
+}
+
+.course h1, .thesis h1 {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.course .container .text {
+  background-color: white;
+  padding: 16px 16px;
+}
+
+.course .container .text .title {
+  margin: 8px 0;
+}
+
+.course .container .text p {
+  margin-bottom: 24px;
+}
+
+.course .container .detail {
+  width: 33%;
+  flex-shrink: 1;
+}
+
+.course .container .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 470px) {
+  .course {
+    padding: 32px 16px;
+    background-color: white;
+    border-top: 1px solid lightgrey;
+  }
+
+  .course .container {
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+
+  .course .container .one {
+    margin-right:0;
+  }
+
+  .course .container .three {
+    margin-left: 0;
+  }
+
+  .course .container .detail {
+    width: 100%;
+    display: none;
+  }
+
+  .course .container .mobile {
+    display: block;
+    background-color: lightgrey;
+    padding: 16px 16px 24px 16px;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+}
+
+
+
+.thesis {
+  padding: 32px 0 32px 24px;
+}
+
+.thesis .container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.thesis .container .left {
+  width: 60%;
+  padding-right: 24px;
+}
+
+.thesis .container .right {
+  width: 40%;
+}
+
+.thesis .left h2 {
+  margin: 24px 0 8px 0;
+}
+
+@media only screen and (max-width: 470px) {
+  .thesis .right,
+  .thesis .left h2,
+  .thesis .left p {
+    display: none;
+  }
+
+  .thesis {
+    border-top: 1px solid lightgrey;
+    padding: 32px 0;
+  }
+
+  .thesis .container .left {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+
+
+footer {
+  border-top: 1px solid lightgrey;
+  display: flex;
+  padding: 16px 24px;
+  height: 64px;
+}
+
+footer .copyright {
+  flex-grow: 1;
+}
+
+footer li {
+  display: inline;
+  padding-right: 16px;
+}
+
+footer li:last-child {
+  padding-right: 0;
+}
+
+@media only screen and (max-width: 470px) {
+  footer {
+    border-top: 0;
+    padding: 16px 16px;
+    height: auto;
+  }
+
+  footer .other {
+    display: none;
+  }
+}
